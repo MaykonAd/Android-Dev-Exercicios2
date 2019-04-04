@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Avalicao">
+
+    <EditText
+        android:id="@+id/av1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="1° Avaliação"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/av2"
+        app:layout_constraintStart_toStartOf="@+id/nome"
+        app:layout_constraintTop_toBottomOf="@+id/nome" />
+
+    <EditText
+        android:id="@+id/av2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:hint="2° Avaliação"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/tela"
+        app:layout_constraintStart_toStartOf="@+id/tela"
+        app:layout_constraintTop_toBottomOf="@+id/av1" />
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="nome do aluno"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/av1"
+        app:layout_constraintEnd_toEndOf="@+id/av2"
+        app:layout_constraintStart_toStartOf="@+id/av2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:onClick="calcular"
+        android:text="calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tela" />
+
+    <TextView
+        android:id="@+id/tela"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="186dp"
+        android:text="45"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/av2" />
+
+</android.support.constraint.ConstraintLayout>

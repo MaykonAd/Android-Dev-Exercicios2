@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Operadora</string>
+    <string-array name="Operadoras">
+        <item>OP1</item>
+        <item>OP2</item>
+        <item>OP3</item>
+    </string-array>
+
+    <string-array name="Planetas">
+        <item>Mercúrio</item>
+        <item>Vênus</item>
+        <item>Marte</item>
+        <item>Júpiter</item>
+        <item>Saturno</item>
+        <item>Urano</item>
+    </string-array>
+</resources>
