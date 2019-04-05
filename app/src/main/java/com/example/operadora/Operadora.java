@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import java.text.DecimalFormat;
 
-public class MainActivity extends AppCompatActivity {
+public class Operadora extends AppCompatActivity {
 
     private TextView tela;
     private EditText minutos;
